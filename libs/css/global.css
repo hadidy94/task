@@ -1,0 +1,318 @@
+/* MAIN */
+
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http                          ://richclarkdesign.com)
+ * http                                         ://cssreset.com
+ */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin      : 0;
+    padding     : 0;
+    border      : 0;
+    outline     : 0;
+    /* font-size:100%; */
+    background  : transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin        : 0;
+    padding       : 0;
+    /* font-size  :100%; */
+    vertical-align: baseline;
+    background    : transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color           : #000;
+    text-decoration : none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color           : #000;
+    font-style      : italic;
+    font-weight     : bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor       : help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display   : block;
+    height    : 1px;
+    border    : 0;
+    border-top: 1px solid #cccccc;
+    margin    : 1em 0;
+    padding   : 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+html {
+    direction: rtl;
+}
+
+
+
+div {
+    /*overflow: hidden;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin : 0px;
+    padding: 0px;
+}
+
+ul,
+ol {
+    clear        : both;
+    padding      : 0px;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    border: none;
+    width : auto;
+    height: auto;
+}
+
+header,
+footer,
+article,
+news,
+content,
+details,
+section,
+group,
+nav,
+bar,
+wrap_menu,
+blockh,
+blockv,
+title,
+block,
+wrap,
+clear {
+    display: block;
+}
+
+a {
+    color             : #fff;
+    text-decoration   : none;
+    transition        : all .3s ease;
+    -moz-transition   : all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition     : all .3s ease;
+}
+
+a:hover,
+a:focus {
+    color          : #9D8248;
+    text-decoration: none;
+    cursor         : pointer;
+    outline        : none;
+}
+
+.clear {
+    clear: both;
+}
+
+.dropdown-toggle::before {
+    display       : inline-block;
+    width         : 0;
+    height        : 0;
+    vertical-align: middle;
+    content       : "";
+    border-top    : .2em solid;
+    border-right  : .2em solid transparent;
+    border-bottom : 0;
+    border-left   : .2em solid transparent;
+}
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn-green {
+    background: #CF9C28;
+    color     : #fff;
+}
+
+.btn-green:hover {
+    background: #341B13;
+    color     : #fff;
+}
+
+.sec-title {
+    height       : 45px;
+    margin-bottom: 35px;
+    position     : relative;
+}
+.sec-title h2{
+    color:#4A1909;
+    font-weight: 500;
+}
+
+.sec-title::after {
+    content   : "";
+    position  : absolute;
+    width     : 200px;
+    height    : 3px;
+    background: #C07D00;
+    right     : 0;
+    bottom    : 0;
+
+}
+
+.sec-title::before {
+    display       : inline-block;
+    width         : 0;
+    height        : 0;
+    vertical-align: middle;
+    content       : "";
+    border-top    : .5em solid #C07D00;
+    border-right  : .5em solid transparent;
+    border-bottom : 0;
+    border-left   : .5em solid transparent;
+    position      : absolute;
+    bottom        : -4px;
+    /* left       : 0; */
+    right         : 100px;
+}
+
+.sec-title.text-center:after {
+    left  : 0;
+    right : 0;
+    margin: auto;
+}
+
+.sec-title.text-center:before {
+    right: 50%;
+}

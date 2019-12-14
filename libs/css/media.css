@@ -1,0 +1,120 @@
+/* MEDIA 1200 */
+
+@media (min-width: 1024px) and (max-width: 2000px) {}
+
+/* MEDIA 1024 */
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .logo img {
+        margin: auto;
+    }
+
+    .top-header {
+        height          : auto;
+        background-color: #341B13;
+    }
+}
+
+/* END MEDIA 800 */
+
+@media (min-width: 600px) and (max-width: 800px) {
+    body {
+        overflow-x: visible;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        overflow-x: visible;
+    }
+
+    .logo img {
+        margin: auto;
+    }
+
+    header .main-menu {
+        margin-top: 15px;
+    }
+
+    header .dropdown-menu {
+        position    : relative;
+        float       : none;
+        margin-right: 20px;
+        margin-left : 20px;
+    }
+
+    header .navbar-default .navbar-collapse,
+    header .navbar-default .navbar-form {
+        background: #5d250a;
+        border    : none;
+    }
+
+    header .navbar-default .navbar-nav>li>a {
+        color    : #fff;
+        font-size: 16px;
+
+    }
+
+    header .navbar-default .navbar-nav>li>a:hover,
+    header .navbar-default .navbar-nav>li>a:focus {
+        color: #eee;
+    }
+
+    
+    /* slider */
+
+    .slider .carousel-caption {
+        background  : rgba(0, 0, 0, .5);
+        border-right: 2px solid #CF9C28;
+        right       : 15%;
+        left        : 15%;
+        padding     : 10px;
+        bottom      : 14px;
+    }
+
+    .slider .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .slider .carousel-control {
+
+        width    : 30px;
+        height   : 30px;
+        font-size: 15px;
+        top      : 38%;
+
+    }
+    .about-desc-content{
+        flex-direction: column;
+    }
+    .about-desc-content .about-img {
+      
+        margin-bottom: 15px;
+    }
+    .dean-news-share {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .advertise  .owl-nav{
+        display: none;
+    }
+    .articles-img .articles-author{
+        flex-direction: column;
+    }
+    .bottom-menu ul{
+        flex-direction: column;
+    }
+    .footer-bottom p{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .contact-title{
+        height: 75px;
+    }
+    
+}
+
+@media (max-width: 400px) {}
