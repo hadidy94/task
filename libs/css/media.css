@@ -114,7 +114,32 @@
     .contact-title{
         height: 75px;
     }
-    
+    header{
+        background: #fff;
+    }
+    .slider .item{
+        height: 300px;
+    }
+    .slider::before{
+        height: 300px;
+    }
+    .wrap{
+        padding-bottom: 100px;
+    }
+    .gates .gates-title {
+        position: relative;
+        width: auto;
+        margin-top: 50px;
+        float: none;
+         padding-left: 0;
+        text-align: center;
+    }
+    .gates .gates-title::after{
+        margin: auto;
+    }
+    .partner-title::after{
+        width: 0;
+    }
 }
 
 @media (max-width: 400px) {}

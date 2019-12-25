@@ -1,14 +1,14 @@
-$(window).load(function() {
-  $(document).ready(function() {
+$(window).load(function () {
+  $(document).ready(function () {
     $(".dropdown").hover(
-      function() {
+      function () {
         $(this)
           .find(".dropdown-menu")
           .stop(true, true)
           .delay(50)
           .slideDown(100);
       },
-      function() {
+      function () {
         $(this)
           .find(".dropdown-menu")
           .stop(true, true)
@@ -18,12 +18,54 @@ $(window).load(function() {
     );
   });
 
-  document.querySelector(".searchBtn").addEventListener("click", function() {
+  document.querySelector(".searchBtn").addEventListener("click", function () {
     document.querySelector(".searchform").classList.toggle("active");
   });
-  //    $(document).ready(function() {
-  //        $('.pgwSlider').pgwSlider();
-  //    });
+ 
+  $(".top-slider").owlCarousel({
+    rtl: true,
+    loop: true,
+    autoplay: true,
+    margin: 20,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+
+  $(".gate-slider").owlCarousel({
+    rtl: true,
+    loop: true,
+    autoplay: true,
+    margin: 20,
+    dots: false,
+    nav: true,
+    navText: [
+      "<i class='fa fa-angle-right'></i>",
+      "<i class='fa fa-angle-left'></i>"
+    ],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+
+
 
   $(".dean-carousel").owlCarousel({
     rtl: true,
@@ -41,10 +83,10 @@ $(window).load(function() {
         items: 1
       },
       600: {
-        items: 1
+        items: 2
       },
       1000: {
-        items: 2
+        items: 3
       }
     }
   });
@@ -97,7 +139,7 @@ $(window).load(function() {
     }
   });
 
-  $(".media-owl").owlCarousel({
+  $(".multimedia-owl").owlCarousel({
     rtl: true,
     loop: true,
     autoplay: true,
@@ -128,7 +170,7 @@ $(window).load(function() {
     autoplay: true,
     margin: 8,
     dots: true,
-   
+
     responsive: {
       0: {
         items: 1
@@ -143,29 +185,50 @@ $(window).load(function() {
   });
 
 
+  $(".partners-carousel").owlCarousel({
+    rtl: true,
+    loop: true,
+    autoplay: true,
+    margin: 15,
+    dots: false,
+
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 6
+      }
+    }
+  });
+
+
 
 
   $('a[href="#home"]')
-    .on("shown.bs.tab", function() {
+    .on("shown.bs.tab", function () {
       initialize_owl($('#owl1'));
     })
-    .on("hide.bs.tab", function() {
+    .on("hide.bs.tab", function () {
       destroy_owl($('#owl1'));
     });
 
   $('a[href="#profile"]')
-    .on("shown.bs.tab", function() {
+    .on("shown.bs.tab", function () {
       initialize_owl($('#owl2'));
     })
-    .on("hide.bs.tab", function() {
+    .on("hide.bs.tab", function () {
       destroy_owl($('#owl2'));
     });
 
   $('a[href="#messages"]')
-    .on("shown.bs.tab", function() {
+    .on("shown.bs.tab", function () {
       initialize_owl($('#owl3'));
     })
-    .on("hide.bs.tab", function() {
+    .on("hide.bs.tab", function () {
       destroy_owl($('#owl3'));
     });
 
@@ -185,7 +248,7 @@ $(window).load(function() {
         },
         1000: {
           items: 4,
-         
+
         }
       }
     });
@@ -197,4 +260,6 @@ $(window).load(function() {
       .children(":eq(0)")
       .unwrap();
   }
+
+
 });

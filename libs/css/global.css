@@ -270,6 +270,14 @@ a:focus {
     color     : #fff;
 }
 
+.btn-sec {
+    background: #341B13;
+    color     : #fff;
+}
+.btn-sec:hover {
+    background: #CF9C28;
+    color     : #fff;
+}
 .sec-title {
     height       : 45px;
     margin-bottom: 35px;
@@ -277,7 +285,8 @@ a:focus {
 }
 .sec-title h2{
     color:#4A1909;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .sec-title::after {
