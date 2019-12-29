@@ -84,9 +84,9 @@
         top      : 38%;
 
     }
-    .about-desc-content{
+    /* .about-desc-content{
         flex-direction: column;
-    }
+    } */
     .about-desc-content .about-img {
       
         margin-bottom: 15px;
@@ -139,6 +139,18 @@
     }
     .partner-title::after{
         width: 0;
+    }
+    .navbar-default .navbar-toggle{
+        margin: 0;
+    }
+    .navbar-nav{
+        margin: 0;
+    }
+    .primary-menu .navbar-nav{
+        min-height: 300px;
+    }
+    .desc-content ul li{
+        width: 100%;
     }
 }
 
